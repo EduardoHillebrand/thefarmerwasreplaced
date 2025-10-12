@@ -17,3 +17,34 @@ def rotacionar(matriz):
 		y_linha += 1
 
 	return nova
+	
+	
+def CheckExpand():
+	cost = get_cost(Unlocks.Expand)
+	for item in cost:
+		custo = cost[item]
+	total = num_items(list(cost)[0])
+	
+	if total > custo * 1.3:
+		print("!")
+		unlock(Unlocks.Expand)
+
+def GetLabel(str):
+	if str == "C" :
+		return "Carrot"
+	elif str == "B" :
+		return "Bush"
+	elif str == "T" :
+		return "Wood" 
+	elif str == "P" :
+		return "Pumpkin"
+	elif str == "S" :
+		return "Sunflower"
+	elif str == "K" :
+		return "Cactus"
+	elif str == "O" :
+		return "Optimized"
+	elif str == "Z" :
+		return "Love"
+	else:
+		return "Hay"

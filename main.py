@@ -1,5 +1,6 @@
 import farmer_recipies
 import myMap
+import functions
 
 WS = get_world_size()
 #print(WS)
@@ -28,7 +29,8 @@ while True:
 		if counter >  LenPP-1 :
 			counter = 0
 		plotList = farmer_recipies.getPlotPlans(counter)
-		print(myMap.PlotTerms[counter])
+		print(functions.GetLabel(myMap.PlotTerms[counter]))
+		functions.CheckExpand()
 	
 	if can_harvest():
 		harvest()
