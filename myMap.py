@@ -1,5 +1,4 @@
 PlotTerms = [ 
-	'O',
 	'S',
 	'Z',
 	'O',
