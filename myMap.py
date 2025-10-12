@@ -1,4 +1,5 @@
 PlotTerms = [ 
+	'O',
 	'S',
 	'Z',
 	'O',
@@ -16,6 +17,7 @@ PlotTerms = [
 	'T',
 	'C', 
 	'P', 
+	'K',
 
 	'S',
 	'O',
@@ -34,6 +36,7 @@ PlotTerms = [
 	'C', 
 	'P', 
 	'O',
+	'K',
 
 	'S',
 	'Z',

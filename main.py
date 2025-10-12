@@ -3,10 +3,6 @@ import myMap
 import functions
 
 WS = get_world_size()
-#print(WS)
-plotList = farmer_recipies.PlotPlans['Z']
-
-SIZE = len(plotList) -1
 LenPP = len(myMap.PlotTerms)
 counter = -1
 #set_farm_size(SIZE)
@@ -29,6 +25,7 @@ while True:
 		if counter >  LenPP-1 :
 			counter = 0
 		plotList = farmer_recipies.getPlotPlans(counter)
+		SIZE = len(plotList) -1
 		print(functions.GetLabel(myMap.PlotTerms[counter]))
 		functions.CheckExpand()
 	
